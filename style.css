@@ -1,0 +1,50 @@
+body{
+    background-image: url("/fondo.jpg") ;
+    display: flex;
+    justify-content: center;
+}
+
+ .conteiner{
+    background-color: rgb(223, 188, 223);
+    margin-top: 30px;
+    width: 864px;
+    display: flex;
+    border: 5px solid black;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.conteiner img{
+    object-fit: contain;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 2px;
+} 
+
+.hover:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+    
+}
+
+.focus {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+    
+} 
+img[tabIndex="0"]{
+    background-color: white;
+    animation-name: efecto;
+    animation-duration: 1s;
+}
+
+@keyframes efecto{
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
