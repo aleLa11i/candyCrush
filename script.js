@@ -13,30 +13,25 @@ function corregir(){
         imagen.removeAttribute("tabindex");
         
           if(i>=0 && i<=8){
-            selectImage(imagen)
-            
-            
-
+            selectImage(imagen) 
           }
           else{   
             
             imagen.src = document.getElementById(`${i-8}`).src
             document.getElementById(`${i-8}`).src = "https://w7.pngwing.com/pngs/133/456/png-transparent-minion-illustration-bob-the-minion-youtube-minions-universal-s-illumination-entertainment-minions-banana-film-despicable-me-animation-thumbnail.png";
             document.getElementById(`${i-8}`).tabIndex = 0;
-
           }
-      }
-      else{x++;}
+      }else{x++;}
     }
-    borrarCandyHor();
-    borrarCandyVar();
-    console.log(x)
+    borrarCandyHor3();
+    borrarCandyVar3();
+
   }while(x<64)
   
 }
 
 
-function borrarCandyHor(){
+function borrarCandyHor3(){
 let valor=true;
   let img1= document.getElementById(`1`)
   let img2= document.getElementById(`2`)
@@ -52,26 +47,79 @@ let valor=true;
       img1.tabIndex=0;
       img2.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
       img2.tabIndex=0;
-
-       
-
-
-      valor=false;
-      
-    }
-   
-   
+      valor=false;     
+    }  
    img1 = img2;
    img2 = img3;
 
  }
-
 return valor;
 }
 
+function borrarCandyHor4(){
+  let valor=true;
+    let img1= document.getElementById(`1`)
+    let img2= document.getElementById(`2`)
+    let img3= document.getElementById(`3`)
+  
+   for (let i = 4; i <= 64; i++) {
+     let img4 = document.getElementById(`${i}`)
+     
+     
+      if(img4.src == img1.src && img4.src == img2.src && img4.src == img3.src ){
+        img4.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+        img4.tabIndex=0;
+        img1.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+        img1.tabIndex=0;
+        img2.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+        img2.tabIndex=0;
+        img3.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+        img3.tabIndex=0;
+        valor=false;     
+      }  
+     img1 = img2;
+     img2 = img3;
+     img3 = img4;
+  
+   }
+  return valor;
+  }
+
+  function borrarCandyHor5(){
+    let valor=true;
+      let img1= document.getElementById(`1`)
+      let img2= document.getElementById(`2`)
+      let img3= document.getElementById(`3`)
+      let img4= document.getElementById(`4`)
+    
+     for (let i = 5; i <= 64; i++) {
+       let img5 = document.getElementById(`${i}`)
+       
+       
+        if(img5.src == img1.src && img5.src == img2.src && img5.src == img3.src && img5.src == img4.src ){
+          img4.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+          img4.tabIndex=0;
+          img5.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+          img5.tabIndex=0;
+          img1.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+          img1.tabIndex=0;
+          img2.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+          img2.tabIndex=0;
+          img3.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+          img3.tabIndex=0;
+          valor=false;     
+        }  
+       img1 = img2;
+       img2 = img3;
+       img3 = img4;
+       img4 = img5;
+    
+     }
+    return valor;
+    }
 
 
-function borrarCandyVar(){
+function borrarCandyVar3(){
   let valor=true;
   
 
@@ -104,12 +152,86 @@ return valor;
 }
 
 
+function borrarCandyVar4(){
+  let valor=true;
+  
+
+ for (let i = 1; i <= 8; i++) {
+  let img1= document.getElementById(`${i}`)
+  let img2= document.getElementById(`${i+8}`)
+  let img3= document.getElementById(`${i+16}`)
+  for (let j = 3; j <= 7; j++) {
+    let img4 = document.getElementById(`${i+(8*j)}`)
+   
+   
+    if(img4.src == img1.src && img4.src == img2.src && img4.src == img3.src ){
+      img4.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+      img4.tabIndex=0;
+      img1.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+      img1.tabIndex=0;
+      img2.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+      img2.tabIndex=0;
+      img3.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+      img3.tabIndex=0;
+      valor=false;     
+
+      
+      
+    }
+   
+   
+   img1 = img2;
+   img2 = img3;
+   img3 = img4;
+  }
+ }
+
+return valor;
+}
+function borrarCandyVar5(){
+  let valor=true;
+  
+
+ for (let i = 1; i <= 8; i++) {
+  let img1= document.getElementById(`${i}`)
+  let img2= document.getElementById(`${i+8}`)
+  let img3= document.getElementById(`${i+16}`)
+  let img4= document.getElementById(`${i+24}`)
+  for (let j = 4; j <= 7; j++) {
+    let img5 = document.getElementById(`${i+(8*j)}`)
+   
+   
+    if(img5.src == img1.src && img5.src == img2.src && img5.src == img3.src && img5.src == img4.src ){
+      img4.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+      img4.tabIndex=0;
+      img5.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+      img5.tabIndex=0;
+      img1.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+      img1.tabIndex=0;
+      img2.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+      img2.tabIndex=0;
+      img3.src = "http://pngimg.com/uploads/minions/minions_PNG59.png";
+      img3.tabIndex=0;
+      valor=false;  
+    }
+   
+   
+   img1 = img2;
+   img2 = img3;
+   img3 = img4;
+   img4 = img5;
+  }
+ }
+
+return valor;
+}
+
 
 
 
 function selectImage(img){
 
-  let valor = Math.floor((Math.random() * (7-1))+1);
+  let valor = Math.floor((Math.random() * (5-1))+1);
   switch (valor) {
     case 1: //banana dolca
         img.src = "https://hhmayorista.com.ar/wp-content/uploads/2020/09/DOLCA-BANANITA-30gr.png";
@@ -146,9 +268,6 @@ for (let i = 1; i <= 64; i++) {
     
 
     selectImage(imgCandy)
-
-      
-
     imgCandy.addEventListener("click",(e)=>{
       document.getElementById(`${i}`).classList.toggle("focus")
           let arrCandy = JSON.parse(localStorage.getItem("candy"));
@@ -177,7 +296,7 @@ for (let i = 1; i <= 64; i++) {
                       
                       
 
-                      if(borrarCandyHor()==true && borrarCandyVar()==true ){
+                      if( borrarCandyHor4()==true && borrarCandyHor5()==true && borrarCandyHor3()==true && borrarCandyVar5()==true && borrarCandyVar4()==true && borrarCandyVar3()==true ){
                         let x=imagen1.src;
                         imagen1.src = imagen2.src;
                         imagen2.src = x;
@@ -227,8 +346,12 @@ for (let i = 1; i <= 64; i++) {
 
 conteiner.appendChild(fragment);
 
-borrarCandyHor();
-borrarCandyVar();
+borrarCandyHor5();
+borrarCandyVar5();
+borrarCandyHor4();
+borrarCandyVar4();
+borrarCandyHor3();
+borrarCandyVar3();
 
 corregir();
 
