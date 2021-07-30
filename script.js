@@ -1,17 +1,22 @@
 const conteiner = document.querySelector(".conteiner");
 const fragment = document.createDocumentFragment();
 const send = document.querySelector(".send");
+const dif = document.querySelector(".dif");
+const difH1 = document.querySelector(".dif-h1");
+
 
 
 send.addEventListener("click",(e)=>{
   let dific = JSON.parse(localStorage.getItem("dific"));
-  const dif = document.querySelector(".dif").value;
-  dific.nivel = dif;
+  dific.nivel = dif.value;
   console.log(dif)
   localStorage.setItem("dific",JSON.stringify(dific))
   location.reload();
 })
 
+dif.addEventListener("change",()=>{
+    difH1.innerHTML = dif.value;
+})
 
 
 function corregir(){
