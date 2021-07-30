@@ -4,3 +4,7 @@ localStorage.setItem("candy",JSON.stringify({
     "candy1":"",
     "candy2":""
 }))
+
+localStorage.setItem("dific",JSON.stringify({
+    "nivel":"1"
+}))

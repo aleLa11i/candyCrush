@@ -1,31 +1,53 @@
 body{
-    background-image: url("/fondo.jpg") ;
-    display: flex;
-    justify-content: center;
+    background-image: url("https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg") ;
+    display: block;
+    
 }
 
  .conteiner{
     background-color: rgb(223, 188, 223);
     margin-top: 30px;
-    width: 864px;
+    margin-left: 35vw;
+    width: 700px;
+    height: 800px;
     display: flex;
+    justify-content: center;
     border: 5px solid black;
     border-radius: 15px;
     flex-wrap: wrap;
 }
 
+.send{
+    width: 100px;
+    height: 20px;
+    margin: 25px;
+}
+
+.conteiner-dificultad{
+    position: absolute;
+    left: 0;
+    margin-left: 5vw;
+    background-color: rgb(223, 188, 223);
+    padding: 50px;
+    width: 10vw;
+    height: 10vh;
+    display: block;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
 .conteiner img{
     object-fit: contain;
     position: relative;
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    margin: 2px;
+    width: 10%;
+    height: 10%;
+    /* outline: 2px solid black; */
+    margin: 5px;
 } 
 
 .hover:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+    box-shadow: 0px 0px 50px 10px rgb(255, 255, 255);
     
 }
 
@@ -35,7 +57,6 @@ body{
     
 } 
 img[tabIndex="0"]{
-    background-color: white;
     animation-name: efecto;
     animation-duration: 1s;
 }
