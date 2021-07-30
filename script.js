@@ -30,7 +30,7 @@ function corregir(){
         if(imagen.tabIndex == 0){
           imagen.removeAttribute("tabindex");
           
-            if(i>=0 && i<=8){
+            if(i==1){
               selectImage(imagen) 
             }
             else{   
@@ -42,6 +42,14 @@ function corregir(){
         }else{x++;}
       }
     }
+    borrarEle1();
+    borrarEle2();
+    borrarEle3();
+    borrarEle4();
+    borrarCandyHor5();
+    borrarCandyVar5();
+    borrarCandyHor4();
+    borrarCandyVar4();
     borrarCandyHor3();
     borrarCandyVar3();
 
